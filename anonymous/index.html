@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title withheld due to double-blind review.</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel-corrected.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Title withheld due to double-blind review.</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://jack111331.github.io/BlogPage">Anonymous authors</a>,</span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-fullhd">
+    <div class="hero-body">
+      <img src="./static/images/Thumbnail_webpage.png"
+      class="thumbnail"
+      alt="Thumbnail."/>
+      <!-- <embed src="static/images/Thumbnail_webpage.pdf" width="339" height="161" type="application/pdf"> -->
+    </div>
+  </div>
+</section>
+
+
+<section class="hero showcase is-light is-small">
+  <div class="hero-body">
+    <h1 class="title"><b>Animation demonstration</b></h1>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="column item-karate">
+          <video poster="" id="karate" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Ours_M004560.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>"A person <span class="karate">doing karate type motion</span>."</p>
+          </div>
+        </div>
+        <div class="column item-stumble">
+          <video poster="" id="stumble" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Ours_010945.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>"A person <span class="walk">walks forward</span> and <span class="push">gets pushed, he stumbles to the left</span> and <span class="return">then returns to his original path</span>."</p>
+          </div>
+        </div>
+        <div class="column item-jump-90">
+          <video poster="" id="jump-90" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Ours_002091.mp4"
+                    type="video/mp4">
+          </video>  
+          <div class="text-prompt">
+            <p>"The person <span class="swing">swings both arms</span>, <span class="squat">squats</span>, and <span class="jump-turn">jumps while turning 90 degrees to his left before landing</span>."</p>
+          </div>
+        </div>
+        <div class="column item-big-step">
+          <video poster="" id="big-step" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Ours_007251.mp4"
+                    type="video/mp4">
+          </video>  
+          <div class="text-prompt">
+            <p>"A person <span class="walk-forward">walks forward</span>, <span class="big-step">then takes a big step forward</span>."</p>
+          </div>
+        </div>
+        <div class="column item-squat">
+          <video poster="" id="squat" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Ours_004973.mp4"
+                    type="video/mp4">
+          </video>  
+          <div class="text-prompt">
+            <p>"A person does <span class="arm-straight">one squat with arms straight out in front</span>."</p>
+          </div>
+        </div>
+        <div class="column item-backflip">
+          <video poster="" id="backflip" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Ours_backflip.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>"A person <span class="backflip">makes a backflip</span>."</p>
+          </div>
+        </div>
+        <div class="column item-stair">
+          <video poster="" id="stair" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Ours_M000337.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>"A person <span class="walk-down">walks down stairs</span> <span class="hold-railing">while holding a railing with the left hand</span>."</p>
+          </div>
+        </div>
+        <div class="column item-walk-and-pick">
+          <video poster="" id="stair" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Ours_M007715.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>"A person <span class="lean-left">leans forward with their left hand as if to pick something up</span>, <span class="walk-right">walks to the right</span>, <span class="turn-left">turns left</span>, and <span class="lean-pick">leans to pick something up again</span>, <span class="move-left-arm">then moves left arm as if to wipe something</span>."</p>
+          </div>
+        </div>
+        <div class="column item-crawling">
+          <video poster="" id="stair" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Ours_M010792.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>"Figures <span class="get-down">get down on hands and knees facing right</span> and <span class="crawl-three-steps">crawls 3 steps before turning around</span> and <span class="crawl-left">crawling to the left for 4 steps</span>, <span class="stand-back">backs up slightly and stands back up facing forward</span>."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop acknow">
+    <h2 class="title is-3 has-text-centered">Acknowledgement</h2>
+    <p class="paragraph">
+      Our work has referenced the following materials, and we extend our heartfelt gratitude.
+    </p>
+    <ul>
+      <li><span class="work"><a href="https://nerfies.github.io/">Nerfie</a></span> for providing their project webpage as template.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/jack111331" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The source code of this webpage is based on <a href="https://nerfies.github.io/">Nerfie</a>. You can borrow their <a href="https://github.com/nerfies/nerfies.github.io">source code</a> 
+            with proper credit information placed in footer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
