@@ -122,6 +122,39 @@ body {
 .publication-body img {
 }
 
+.compare-carousel {
+  overflow: hidden;
+}
+
+.compare-carousel .column {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.compare-carousel .item {
+  display: block;
+  margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+  text-align: center !important;
+}
+
+.compare-carousel video {
+  border-radius: 10px;
+  margin: 0;
+}
+
+.compare-carousel .text-prompt {
+  font-weight: bold;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.6rem;
+}
+
 .results-carousel {
   overflow: hidden;
 }
@@ -153,6 +186,9 @@ body {
   border-radius: 10px;
   text-align: center;
   padding: 0.6rem;
+}
+.results-carousel .item-climb-stair .climb {
+  background: hsl(180, 93%, 89%);
 }
 
 .results-carousel .item-karate .karate {
