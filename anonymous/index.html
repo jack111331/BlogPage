@@ -6,7 +6,7 @@
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Title withheld due to double-blind review.</title>
+  <title>Tai-Chi: Text-to-Motion Generation with Locality-Aware Bipartite Body-Part Motion Prior</title>
 
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -56,10 +56,10 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Title withheld due to double-blind review.</h1>
+          <h1 class="title is-1 publication-title">Tai-Chi: Text-to-Motion Generation with Locality-Aware Bipartite Body-Part Motion Prior</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://jack111331.github.io/BlogPage">Anonymous authors</a>,</span>
+              <a href="https://jack111331.github.io/BlogPage">Jian-Kai Zhu</a>, <a href="https://sites.google.com/site/jenchunlin/">Jen-Chun Lin</a>, <a href="https://ieeexplore.ieee.org/author/38237036400">Wen-Li Wei</a>
             </span>
           </div>
 
@@ -72,10 +72,22 @@
 <section class="hero teaser">
   <div class="container is-fullhd">
     <div class="hero-body">
-      <img src="./static/images/Thumbnail_webpage.png"
-      class="thumbnail"
-      alt="Thumbnail."/>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="./static/images/Thumbnail_webpage.png"
+          class="thumbnail"
+          alt="Thumbnail."/>
+        </div>
+      </div>
       <!-- <embed src="static/images/Thumbnail_webpage.pdf" width="339" height="161" type="application/pdf"> -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/Tsw5KodIU9o?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -217,7 +229,107 @@
   </div>
 </section>
 
+<section class="hero showcase is-light is-small">
+  <div class="hero-body">
+    <h1 class="title"><b>Part motion composition</b></h1>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="2">
+        <div class="column item-part-comp">
+          <video poster="" id="part-comp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/PartComp_Ours_2.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>Upper-body: "A person <span class="lift">lifts their left hand up to their head</span>, <span class="bring">brings it down</span>."</p>
+            <p>Lower-body: "A person <span class="sit">sits down</span> and <span class="stand">stands up</span>."</p>
+          </div>
+        </div>
+        <div class="column item-part-comp">
+          <video poster="" id="part-comp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/PartComp_Ours_4.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>Upper-body: "A person <span class="lift">lifts their left hand up to their head</span>, <span class="bring">brings it down</span>."</p>
+            <p>Lower-body: "A person is <span class="jump">doing several jumps</span>."</p>
+          </div>
+        </div>
+        <div class="column item-part-comp">
+          <video poster="" id="part-comp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/PartComp_Ours_2.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>Upper-body: "A person <span class="lift">lifts their left hand up to their head</span>, <span class="bring">brings it down</span>."</p>
+            <p>Lower-body: "A person <span class="sit">sits down</span> and <span class="stand">stands up</span>."</p>
+          </div>
+        </div>
+        <div class="column item-part-comp">
+          <video poster="" id="part-comp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/PartComp_Ours_4.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>Upper-body: "A person <span class="lift">lifts their left hand up to their head</span>, <span class="bring">brings it down</span>."</p>
+            <p>Lower-body: "A person is <span class="jump">doing several jumps</span>."</p>
+          </div>
+        </div>
 
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero showcase is-light is-small">
+  <div class="hero-body">
+    <h1 class="title"><b>Trajectory control</b></h1>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="2">
+        <div class="column item-traj-optm-1">
+          <video poster="" id="traj-optm-1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Traj_Optm_1_Ours.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>Assigned joint trajectory: <span class="control">Right hand</span></p>
+            <p>"A man <span class="reach">reaches his arms straight out in front</span>."</p>
+          </div>
+        </div>
+        <div class="column item-traj-optm-2">
+          <video poster="" id="traj-optm-2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Traj_Optm_2_Ours.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>Assigned joint trajectory: <span class="control">Right hand and left hand</span></p>
+            <p>"A person is <span class="walk">slowly walking forward</span>."</p>
+          </div>
+        </div>
+        <div class="column item-traj-optm-3">
+          <video poster="" id="traj-optm-3" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Traj_Optm_4_Ours.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>Assigned joint trajectory: <span class="control">Right leg ankle</span></p>
+            <p>"a person is <span class="move">moving his right leg around</span>."</p>
+          </div>
+        </div>
+        <div class="column item-traj-optm-4">
+          <video poster="" id="traj-optm-4" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Traj_Optm_5_Ours.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>Assigned joint trajectory: <span class="control">Head</span></p>
+            <p>"a person is <span class="throw">throwing a ball</span>."</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop acknow">
