@@ -82,7 +82,7 @@
       <!-- <embed src="static/images/Thumbnail_webpage.pdf" width="339" height="161" type="application/pdf"> -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Video</h2>
+          <h2 class="title is-3">Demo video</h2>
           <div class="publication-video">
             <iframe src="https://www.youtube.com/embed/Tsw5KodIU9o?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
           </div>
@@ -188,6 +188,42 @@
             <p>"A person does <span class="arm-straight">one squat with arms straight out in front</span>."</p>
           </div>
         </div>
+        <div class="column item-full-turn">
+          <video poster="" id="full-turn" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Ours_M007628.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>"Person <span class="move-forward">moves forward two steps</span> then does a <span class="full-turn">full turn and faces opposite direction</span>."</p>
+          </div>
+        </div>
+        <div class="column item-sit-ledge">
+          <video poster="" id="sit-ledge" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Ours_011471.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>"A person <span class="sit-ledge">sits on the ledge of something</span> then <span class="get-off">gets off</span> and <span class="walk-away">walks away</span>."</p>
+          </div>
+        </div>
+        <div class="column item-sit-bring-stand">
+          <video poster="" id="sit-bring-stand" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Ours_007581.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>"A man <span class="sit-down">sits down</span>, <span class="bring-hand">brings his hans to his face</span> and then <span class="stand-up">stands back up</span>."</p>
+          </div>
+        </div>
+        <div class="column item-climb-ladder">
+          <video poster="" id="climb-ladder" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ours/Ours_010248.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="text-prompt">
+            <p>"A person <span class="climb">climbs up some ladders</span>."</p>
+          </div>
+        </div>
         <div class="column item-backflip">
           <video poster="" id="backflip" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/ours/Ours_backflip.mp4"
@@ -282,7 +318,7 @@
 
 <section class="hero showcase is-light is-small">
   <div class="hero-body">
-    <h1 class="title"><b>Trajectory control</b></h1>
+    <h1 class="title"><b>Trajectory control (Experimental)</b></h1>
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="2">
         <div class="column item-traj-optm-1">

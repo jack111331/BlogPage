@@ -239,6 +239,34 @@ body {
   background: hsl(332, 100%, 85%);
 }
 
+.results-carousel .item-sit-ledge .sit-ledge {
+  background: hsl(194, 100%, 81%);
+}
+
+.results-carousel .item-sit-ledge .get-off {
+  background: hsl(329, 100%, 85%);
+}
+
+.results-carousel .item-sit-ledge .walk-away {
+  background: hsl(121, 100%, 85%);
+}
+
+.results-carousel .item-sit-bring-stand .sit-down {
+  background: hsl(268, 100%, 85%);
+}
+
+.results-carousel .item-sit-bring-stand .bring-hand {
+  background: hsl(113, 100%, 86%);
+}
+
+.results-carousel .item-sit-bring-stand .stand-up {
+  background: hsl(25, 100%, 85%);
+}
+
+.results-carousel .item-climb-ladder .climb {
+  background: hsl(0, 74%, 85%);
+}
+
 .results-carousel .item-backflip .backflip {
   background: hsl(224, 100%, 85%);
 }
