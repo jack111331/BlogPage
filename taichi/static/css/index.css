@@ -343,6 +343,9 @@ body {
 }
 
 .results-carousel .item-traj-optm-2 .control {
+  background: #faffd2;
+}
+.results-carousel .item-traj-optm-2 .optimize {
   background: #eaf882;
 }
 .results-carousel .item-traj-optm-2 .walk {
